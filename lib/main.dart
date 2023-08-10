@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         },
         title: 'Flutter Demo',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: KMainColor),
+          colorScheme: ColorScheme.fromSeed(seedColor: kMainColor),
           fontFamily: "Roboto",
           useMaterial3: true,
         ),

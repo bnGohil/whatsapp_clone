@@ -20,7 +20,7 @@ class _AppIconAnimationState extends State<AppIconAnimation> with SingleTickerPr
   @override
   Widget build(BuildContext context) {
         return Scaffold(
-      backgroundColor: KMainColor,
+      backgroundColor: kMainColor,
       body: Stack(
         children: <Widget>[
           Align(
@@ -30,7 +30,7 @@ class _AppIconAnimationState extends State<AppIconAnimation> with SingleTickerPr
                   parent: _controller!, curve: Curves.easeInOut)
               ),
               child: Container(
-                color: KMainColor,
+                color: kMainColor,
                 height: 50,
                 width: 50,
                 child: ImageUtils.appIcon

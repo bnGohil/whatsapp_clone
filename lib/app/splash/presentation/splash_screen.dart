@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: KMainColor,
+      backgroundColor: kMainColor,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -35,12 +35,12 @@ class _SplashScreenState extends State<SplashScreen> {
                 padding: EdgeInsets.symmetric(vertical: 20.sp,horizontal: 20.sp),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: KMainColor
+                  color: kMainColor
                 ),
                 child: Container(
                     height: 100,
                     width: 100,
-                    color: KMainColor,
+                    color: kMainColor,
                     child: const AppIconAnimation()),
                 // child: SizedBox(
                 //     height: 150.sp,
