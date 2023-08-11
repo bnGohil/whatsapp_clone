@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/app/login/presentation/login_page.dart';
+import 'package:whatsapp_clone/app/login/presentation/login_page_sheet.dart';
+import 'package:whatsapp_clone/app/sign_up/presentation/sign_up_page.dart';
 import 'package:whatsapp_clone/app/splash/presentation/splash_screen.dart';
 import 'package:whatsapp_clone/app/welcome/presentation/welcome_page.dart';
 import 'package:whatsapp_clone/utils/constants.dart';
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         routes: {
           "/":(context) => const SplashScreen(),
-          "login_route": (context) => const LoginPage(),
+          "login_route": (context) => const LoginSheetPage(),
+          "sign_up_route": (context) => const SignUpPage(),
           "welcome_route": (context) => const WelcomePage()
         },
         title: 'Flutter Demo',
@@ -28,8 +30,8 @@ class MyApp extends StatelessWidget {
           fontFamily: "Roboto",
           useMaterial3: true,
         ),
-
       );
+
       },
 
     );

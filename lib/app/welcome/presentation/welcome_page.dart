@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_clone/components/custom_buttom_sheet.dart';
+import 'package:whatsapp_clone/app/login/presentation/login_page_sheet.dart';
+import 'package:whatsapp_clone/app/sign_up/presentation/sign_up_page.dart';
 import 'package:whatsapp_clone/components/custom_button.dart';
 import 'package:whatsapp_clone/utils/constants.dart';
 import 'package:whatsapp_clone/utils/extension.dart';
@@ -42,8 +43,9 @@ class _WelcomePageState extends State<WelcomePage> {
                 onTap: () {
                   showModalBottomSheet(
                     context: context,
+                    isScrollControlled: true,
                     builder: (context) {
-                    return const CustomBottomSheet();
+                    return const LoginSheetPage();
                   },);
                 },
                 btnTextStyle: CustomTextStyle.btnTextStyle,
@@ -51,7 +53,12 @@ class _WelcomePageState extends State<WelcomePage> {
               SizedBox(height: 20.sp),
               CustomButton(
                 onTap: () {
-
+                  showModalBottomSheet(
+                    context: context,
+                    isScrollControlled: true,
+                    builder: (context) {
+                      return const SignUpPage();
+                    },);
                 },
                 btnText: "Sign up",
                 btnTextStyle: CustomTextStyle.btnTextStyle,

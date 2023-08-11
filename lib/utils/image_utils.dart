@@ -9,6 +9,9 @@ class ImageUtils{
    alignment: Alignment.center,
  );
  static Widget get welcomeUserIcon => const CustomAssetsImage(path: "welcome_user.png",fit: BoxFit.contain,alignment: Alignment.center);
+ static Widget get faceBookIcon => const CustomAssetsImage(path: "facebook.png",fit: BoxFit.contain,alignment: Alignment.center);
+ static Widget get googleIcon => const CustomAssetsImage(path: "google.png",fit: BoxFit.contain,alignment: Alignment.center);
+ static Widget get twitterIcon => const CustomAssetsImage(path: "twitter.png",fit: BoxFit.contain,alignment: Alignment.center);
 }
 class CustomSvgImage extends StatelessWidget {
   final Color? color;
